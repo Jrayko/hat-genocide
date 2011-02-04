@@ -4290,7 +4290,7 @@
 			"image_inventory"	"backpack/player/items/demo/hallmark"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"model_player"	"models/player/items/demo/hallmark.mdl"
+			//"model_player"	"models/player/items/demo/hallmark.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
