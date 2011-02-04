@@ -591,7 +591,8 @@
 			"image_inventory"	"backpack/weapons/c_models/c_flamethrower/c_flamethrower"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"model_player"	"models/weapons/w_models/w_flamethrower.mdl"
+			"model_player"	"models/weapons/c_models/c_flamethrower/c_flamethrower.mdl"
+			"attach_to_hands"	"1"
 			"used_by_classes"
 			{
 				"pyro"	"1"
@@ -1512,6 +1513,7 @@
 			"propername"	"1"
 			"min_ilevel"	"10"
 			"max_ilevel"	"10"
+			"anim_slot"	"ITEM2"
 			"image_inventory"	"backpack/weapons/c_models/c_double_barrel"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -1637,7 +1639,7 @@
 			"image_inventory"	"backpack/player/items/demo/demo_afro"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/demo/demo_afro.mdl"
+			"model_player"	"models/player/items/demo/demo_afro.mdl"
 			"drop_type"	"none"
 			"used_by_classes"
 			{
@@ -2516,7 +2518,7 @@
 			"image_inventory"	"backpack/player/items/spy/spy_camera_beard"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			// "model_player"	"models/player/items/spy/spy_camera_beard.mdl"
+			"model_player"	"models/player/items/spy/spy_camera_beard.mdl"
 			"drop_type"	"none"
 			"used_by_classes"
 			{
@@ -2738,7 +2740,7 @@
 			"image_inventory"	"backpack/player/items/sniper/jarate_headband"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			// "model_player"	"models/player/items/sniper/jarate_headband.mdl"
+			//"model_player"	"models/player/items/sniper/jarate_headband.mdl"
 			"drop_type"	"none"
 			"used_by_classes"
 			{
@@ -2806,18 +2808,18 @@
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"holiday_restriction"	"halloween"
-			//"model_player_per_class"	
-			//{
-			//	"scout"		"models/player/items/scout/scout_halloween.mdl"
-			//	"sniper"	"models/player/items/sniper/sniper_halloween.mdl"
-			//	"soldier"	"models/player/items/soldier/soldier_halloween.mdl"
-			//	"demoman"	"models/player/items/demo/demo_halloween.mdl"
-			//	"medic"		"models/player/items/medic/medic_halloween.mdl"
-			//	"heavy"		"models/player/items/heavy/heavy_halloween.mdl"
-			//	"spy"		"models/player/items/spy/spy_halloween.mdl"
-			//	"engineer"	"models/player/items/engineer/engineer_halloween.mdl"
-			//	"pyro"		"models/player/items/pyro/pyro_halloween.mdl"
-			//}
+			"model_player_per_class"	
+			{
+				"scout"		"models/player/items/scout/scout_halloween.mdl"
+				"sniper"	"models/player/items/sniper/sniper_halloween.mdl"
+				"soldier"	"models/player/items/soldier/soldier_halloween.mdl"
+				"demoman"	"models/player/items/demo/demo_halloween.mdl"
+				"medic"		"models/player/items/medic/medic_halloween.mdl"
+				"heavy"		"models/player/items/heavy/heavy_halloween.mdl"
+				"spy"		"models/player/items/spy/spy_halloween.mdl"
+				"engineer"	"models/player/items/engineer/engineer_halloween.mdl"
+				"pyro"		"models/player/items/pyro/pyro_halloween.mdl"
+			}
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -2871,7 +2873,7 @@
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"set_sequence_to_class"	"1"
-			//"model_player"	"models/player/items/all_class/all_domination_2009.mdl"
+			"model_player"	"models/player/items/all_class/all_domination_2009.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -3135,7 +3137,7 @@
 			"image_inventory"	"backpack/player/items/all_class/all_halo"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/all_class/all_halo.mdl"
+			"model_player"	"models/player/items/all_class/all_halo.mdl"
 			"drop_type"	"none"
 			"used_by_classes"
 			{
@@ -3155,11 +3157,11 @@
 			}
 			"attributes"
 			{
-				//"attach particle effect"
-				//{
-				//	"attribute_class"	"set_attached_particle"
-				//	"value"	"5"
-				//}
+				"attach particle effect"
+				{
+					"attribute_class"	"set_attached_particle"
+					"value"	"5"
+				}
 				"cannot trade"
 				{
 					"attribute_class"	"cannot_trade"
@@ -3723,18 +3725,18 @@
 			"image_inventory"	"backpack/player/items/demo/hat_first_nr"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player_per_class"	
-			//{
-			//	"scout"		"models/player/items/scout/hat_first_nr.mdl"
-			//	"sniper"	"models/player/items/sniper/hat_first_nr.mdl"
-			//	"soldier"	"models/player/items/soldier/hat_first_nr.mdl"
-			//	"demoman"	"models/player/items/demo/hat_first_nr.mdl"
-			//	"medic"		"models/player/items/medic/hat_first_nr.mdl"
-			//	"heavy"		"models/player/items/heavy/hat_first_nr.mdl"
-			//	"spy"		"models/player/items/spy/hat_first_nr.mdl"
-			//	"engineer"	"models/player/items/engineer/hat_first_nr.mdl"
-			//	"pyro"		"models/player/items/pyro/hat_first_nr.mdl"
-			//}
+			"model_player_per_class"	
+			{
+				"scout"		"models/player/items/scout/hat_first_nr.mdl"
+				"sniper"	"models/player/items/sniper/hat_first_nr.mdl"
+				"soldier"	"models/player/items/soldier/hat_first_nr.mdl"
+				"demoman"	"models/player/items/demo/hat_first_nr.mdl"
+				"medic"		"models/player/items/medic/hat_first_nr.mdl"
+				"heavy"		"models/player/items/heavy/hat_first_nr.mdl"
+				"spy"		"models/player/items/spy/hat_first_nr.mdl"
+				"engineer"	"models/player/items/engineer/hat_first_nr.mdl"
+				"pyro"		"models/player/items/pyro/hat_first_nr.mdl"
+			}
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -3829,18 +3831,18 @@
 			"image_inventory"	"backpack/player/items/demo/hat_second_nr"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player_per_class"	
-			//{
-			//	"scout"		"models/player/items/scout/hat_second_nr.mdl"
-			//	"sniper"	"models/player/items/sniper/hat_second_nr.mdl"
-			//	"soldier"	"models/player/items/soldier/hat_second_nr.mdl"
-			//	"demoman"	"models/player/items/demo/hat_second_nr.mdl"
-			//	"medic"		"models/player/items/medic/hat_second_nr.mdl"
-			//	"heavy"		"models/player/items/heavy/hat_second_nr.mdl"
-			//	"spy"		"models/player/items/spy/hat_second_nr.mdl"
-			//	"engineer"	"models/player/items/engineer/hat_second_nr.mdl"
-			//	"pyro"		"models/player/items/pyro/hat_second_nr.mdl"
-			//}
+			"model_player_per_class"	
+			{
+				"scout"		"models/player/items/scout/hat_second_nr.mdl"
+				"sniper"	"models/player/items/sniper/hat_second_nr.mdl"
+				"soldier"	"models/player/items/soldier/hat_second_nr.mdl"
+				"demoman"	"models/player/items/demo/hat_second_nr.mdl"
+				"medic"		"models/player/items/medic/hat_second_nr.mdl"
+				"heavy"		"models/player/items/heavy/hat_second_nr.mdl"
+				"spy"		"models/player/items/spy/hat_second_nr.mdl"
+				"engineer"	"models/player/items/engineer/hat_second_nr.mdl"
+				"pyro"		"models/player/items/pyro/hat_second_nr.mdl"
+			}
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -3935,18 +3937,18 @@
 			"image_inventory"	"backpack/player/items/demo/hat_third_nr"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player_per_class"	
-			//{
-			//	"scout"		"models/player/items/scout/hat_third_nr.mdl"
-			//	"sniper"	"models/player/items/sniper/hat_third_nr.mdl"
-			//	"soldier"	"models/player/items/soldier/hat_third_nr.mdl"
-			//	"demoman"	"models/player/items/demo/hat_third_nr.mdl"
-			//	"medic"		"models/player/items/medic/hat_third_nr.mdl"
-			//	"heavy"		"models/player/items/heavy/hat_third_nr.mdl"
-			//	"spy"		"models/player/items/spy/hat_third_nr.mdl"
-			//	"engineer"	"models/player/items/engineer/hat_third_nr.mdl"
-			//	"pyro"		"models/player/items/pyro/hat_third_nr.mdl"
-			//}
+			"model_player_per_class"	
+			{
+				"scout"		"models/player/items/scout/hat_third_nr.mdl"
+				"sniper"	"models/player/items/sniper/hat_third_nr.mdl"
+				"soldier"	"models/player/items/soldier/hat_third_nr.mdl"
+				"demoman"	"models/player/items/demo/hat_third_nr.mdl"
+				"medic"		"models/player/items/medic/hat_third_nr.mdl"
+				"heavy"		"models/player/items/heavy/hat_third_nr.mdl"
+				"spy"		"models/player/items/spy/hat_third_nr.mdl"
+				"engineer"	"models/player/items/engineer/hat_third_nr.mdl"
+				"pyro"		"models/player/items/pyro/hat_third_nr.mdl"
+			}
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -4164,18 +4166,18 @@
 			"image_inventory"	"backpack/player/items/all_class/earbuds"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player_per_class"	
-			//{
-			//	"scout"		"models/player/items/scout/scout_earbuds.mdl"
-			//	"sniper"	"models/player/items/sniper/sniper_earbuds.mdl"
-			//	"soldier"	"models/player/items/soldier/soldier_earbuds.mdl"
-			//	"demoman"	"models/player/items/demo/demo_earbuds.mdl"
-			//	"medic"		"models/player/items/medic/medic_earbuds.mdl"
-			//	"heavy"		"models/player/items/heavy/heavy_earbuds.mdl"
-			//	"spy"		"models/player/items/spy/spy_earbuds.mdl"
-			//	"engineer"	"models/player/items/engineer/engineer_earbuds.mdl"
-			//	"pyro"		"models/player/items/pyro/pyro_earbuds.mdl"
-			//}
+			"model_player_per_class"	
+			{
+				"scout"		"models/player/items/scout/scout_earbuds.mdl"
+				"sniper"	"models/player/items/sniper/sniper_earbuds.mdl"
+				"soldier"	"models/player/items/soldier/soldier_earbuds.mdl"
+				"demoman"	"models/player/items/demo/demo_earbuds.mdl"
+				"medic"		"models/player/items/medic/medic_earbuds.mdl"
+				"heavy"		"models/player/items/heavy/heavy_earbuds.mdl"
+				"spy"		"models/player/items/spy/spy_earbuds.mdl"
+				"engineer"	"models/player/items/engineer/engineer_earbuds.mdl"
+				"pyro"		"models/player/items/pyro/pyro_earbuds.mdl"
+			}
 			"drop_type"	"none"
 			"used_by_classes"
 			{
@@ -4191,16 +4193,16 @@
 			}
 			"visuals"
 			{
-				//"attached_particlesystem"
-				//{
-				//	"system"	"headphone_notes"
-				//	"attachment" "ear_R"
-				//}
-				//"attached_particlesystem"
-				//{
-				//	"system"	"headphone_notes"
-				//	"attachment" "ear_L"
-				//}
+				"attached_particlesystem"
+				{
+					"system"	"headphone_notes"
+					"attachment" "ear_R"
+				}
+				"attached_particlesystem"
+				{
+					"system"	"headphone_notes"
+					"attachment" "ear_L"
+				}
 			}
 			"capabilities"
 			{
@@ -4259,7 +4261,7 @@
 			"image_inventory"	"backpack/player/items/heavy/hounddog"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/heavy/hounddog.mdl"
+			"model_player"	"models/player/items/heavy/hounddog.mdl"
 			"drop_type"	"none"
 			"propername"	"1"
 			"used_by_classes"
@@ -4324,7 +4326,7 @@
 			"image_inventory"	"backpack/player/items/spy/noblehair"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/spy/noblehair.mdl"
+			"model_player"	"models/player/items/spy/noblehair.mdl"
 			"drop_type"	"none"
 			"used_by_classes"
 			{
@@ -4439,7 +4441,7 @@
 			"image_inventory"	"backpack/player/items/pyro/pyro_brainsucker"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/pyro/pyro_brainsucker.mdl"
+			"model_player"	"models/player/items/pyro/pyro_brainsucker.mdl"
 			"drop_type"	"none"
 			"used_by_classes"
 			{
@@ -4468,7 +4470,7 @@
 			"image_inventory"	"backpack/player/items/soldier/soldier_samurai"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/soldier/soldier_samurai.mdl"
+			"model_player"	"models/player/items/soldier/soldier_samurai.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -4699,7 +4701,7 @@
 			"image_inventory"	"backpack/player/items/sniper/pith_helmet"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/sniper/pith_helmet.mdl"
+			"model_player"	"models/player/items/sniper/pith_helmet.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -4873,18 +4875,18 @@
 			"image_inventory"	"backpack/player/items/medic/medic_ttg_max"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player_per_class"	
-			//{
-			//	"scout"		"models/player/items/scout/scout_ttg_max.mdl"
-			//	"sniper"	"models/player/items/sniper/sniper_ttg_max.mdl"
-			//	"soldier"	"models/player/items/soldier/soldier_ttg_max.mdl"
-			//	"demoman"	"models/player/items/demo/demo_ttg_max.mdl"
-			//	"medic"		"models/player/items/medic/medic_ttg_max.mdl"
-			//	"heavy"		"models/player/items/heavy/heavy_ttg_max.mdl"
-			//	"spy"		"models/player/items/spy/spy_ttg_max.mdl"
-			//	"engineer"	"models/player/items/engineer/engineer_ttg_max.mdl"
-			//	"pyro"		"models/player/items/pyro/pyro_ttg_max.mdl"
-			//}
+			"model_player_per_class"	
+			{
+				"scout"		"models/player/items/scout/scout_ttg_max.mdl"
+				"sniper"	"models/player/items/sniper/sniper_ttg_max.mdl"
+				"soldier"	"models/player/items/soldier/soldier_ttg_max.mdl"
+				"demoman"	"models/player/items/demo/demo_ttg_max.mdl"
+				"medic"		"models/player/items/medic/medic_ttg_max.mdl"
+				"heavy"		"models/player/items/heavy/heavy_ttg_max.mdl"
+				"spy"		"models/player/items/spy/spy_ttg_max.mdl"
+				"engineer"	"models/player/items/engineer/engineer_ttg_max.mdl"
+				"pyro"		"models/player/items/pyro/pyro_ttg_max.mdl"
+			}
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -5808,7 +5810,7 @@
 			"min_ilevel"	"20"
 			"max_ilevel"	"20"
 			"set_sequence_to_class"	"1"
-			//"model_player"	"models/player/items/all_class/parasite_hat.mdl"
+			"model_player"	"models/player/items/all_class/parasite_hat.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -6610,7 +6612,8 @@
 			"image_inventory"	"backpack/weapons/c_models/c_flamethrower/c_flamethrower"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"model_player"	"models/weapons/w_models/w_flamethrower.mdl"
+			"model_player"	"models/weapons/c_models/c_flamethrower/c_flamethrower.mdl"
+			"attach_to_hands"	"1"
 			"used_by_classes"
 			{
 				"pyro"	"1"
@@ -8006,8 +8009,8 @@
 			"image_inventory"	"backpack/player/items/soldier/worms_gear"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/soldier/worms_gear.mdl"
-			"drop_type"	"drop"
+			"model_player"	"models/player/items/soldier/worms_gear.mdl"
+			"drop_type"	"none"
 			"min_ilevel"	"10"
 			"max_ilevel"	"10"
 			"used_by_classes"
@@ -8306,7 +8309,7 @@
 			"image_inventory"	"backpack/player/items/pyro/fiesta_sombrero"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/pyro/fiesta_sombrero.mdl"
+			"model_player"	"models/player/items/pyro/fiesta_sombrero.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -8400,7 +8403,7 @@
 			"image_inventory"	"backpack/player/items/soldier/chief_rocketeer"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/soldier/chief_rocketeer.mdl"
+			"model_player"	"models/player/items/soldier/chief_rocketeer.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -8468,7 +8471,7 @@
 			"image_inventory"	"backpack/player/items/soldier/dappertopper"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/soldier/dappertopper.mdl"
+			"model_player"	"models/player/items/soldier/dappertopper.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -8532,7 +8535,7 @@
 			"image_inventory"	"backpack/player/items/heavy/heavy_umbrella"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/heavy/heavy_umbrella.mdl"
+			"model_player"	"models/player/items/heavy/heavy_umbrella.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -8592,7 +8595,7 @@
 			"image_inventory"	"backpack/player/items/demo/inquisitor"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/demo/inquisitor.mdl"
+			"model_player"	"models/player/items/demo/inquisitor.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -8668,18 +8671,18 @@
 			"image_inventory"	"backpack/player/items/all_class/all_manncap"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player_per_class"	
-			//{
-			//	"scout"		"models/player/items/scout/scout_cap.mdl"
-			//	"sniper"	"models/player/items/sniper/sniper_cap.mdl"
-			//	"soldier"	"models/player/items/soldier/soldier_cap.mdl"
-			//	"demoman"	"models/player/items/demo/demo_cap.mdl"
-			//	"medic"		"models/player/items/medic/medic_cap.mdl"
-			//	"heavy"		"models/player/items/heavy/heavy_cap.mdl"
-			//	"spy"		"models/player/items/spy/spy_cap.mdl"
-			//	"engineer"	"models/player/items/engineer/engineer_cap.mdl"
-			//	"pyro"		"models/player/items/pyro/pyro_cap.mdl"
-			//}
+			"model_player_per_class"	
+			{
+				"scout"		"models/player/items/scout/scout_cap.mdl"
+				"sniper"	"models/player/items/sniper/sniper_cap.mdl"
+				"soldier"	"models/player/items/soldier/soldier_cap.mdl"
+				"demoman"	"models/player/items/demo/demo_cap.mdl"
+				"medic"		"models/player/items/medic/medic_cap.mdl"
+				"heavy"		"models/player/items/heavy/heavy_cap.mdl"
+				"spy"		"models/player/items/spy/spy_cap.mdl"
+				"engineer"	"models/player/items/engineer/engineer_cap.mdl"
+				"pyro"		"models/player/items/pyro/pyro_cap.mdl"
+			}
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -8776,18 +8779,18 @@
 			"image_inventory"	"backpack/player/items/all_class/all_ellis"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player_per_class"	
-			//{
-			//	"scout"		"models/player/items/scout/scout_ellis.mdl"
-			//	"sniper"	"models/player/items/sniper/sniper_ellis.mdl"
-			//	"soldier"	"models/player/items/soldier/soldier_ellis.mdl"
-			//	"demoman"	"models/player/items/demo/demo_ellis.mdl"
-			//	"medic"		"models/player/items/medic/medic_ellis.mdl"
-			//	"heavy"		"models/player/items/heavy/heavy_ellis.mdl"
-			//	"spy"		"models/player/items/spy/spy_ellis.mdl"
-			//	"engineer"	"models/player/items/engineer/engineer_ellis.mdl"
-			//	"pyro"		"models/player/items/pyro/pyro_ellis.mdl"
-			//}
+			"model_player_per_class"	
+			{
+				"scout"		"models/player/items/scout/scout_ellis.mdl"
+				"sniper"	"models/player/items/sniper/sniper_ellis.mdl"
+				"soldier"	"models/player/items/soldier/soldier_ellis.mdl"
+				"demoman"	"models/player/items/demo/demo_ellis.mdl"
+				"medic"		"models/player/items/medic/medic_ellis.mdl"
+				"heavy"		"models/player/items/heavy/heavy_ellis.mdl"
+				"spy"		"models/player/items/spy/spy_ellis.mdl"
+				"engineer"	"models/player/items/engineer/engineer_ellis.mdl"
+				"pyro"		"models/player/items/pyro/pyro_ellis.mdl"
+			}
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -9054,7 +9057,7 @@
 			"min_ilevel"	"10"
 			"max_ilevel"	"10"
 			"set_sequence_to_class"	"1"
-			//"model_player"	"models/player/items/all_class/halloween_bag_scout.mdl"
+			"model_player"	"models/player/items/all_class/halloween_bag_scout.mdl"
 			"image_inventory"	"backpack/player/items/all_class/halloween_bag_scout"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -9101,7 +9104,7 @@
 			"min_ilevel"	"10"
 			"max_ilevel"	"10"
 			"set_sequence_to_class"	"1"
-			//"model_player"	"models/player/items/all_class/halloween_bag_sniper.mdl"
+			"model_player"	"models/player/items/all_class/halloween_bag_sniper.mdl"
 			"image_inventory"	"backpack/player/items/all_class/halloween_bag_sniper"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -9148,7 +9151,7 @@
 			"min_ilevel"	"10"
 			"max_ilevel"	"10"
 			"set_sequence_to_class"	"1"
-			//"model_player"	"models/player/items/all_class/halloween_bag_soldier.mdl"
+			"model_player"	"models/player/items/all_class/halloween_bag_soldier.mdl"
 			"image_inventory"	"backpack/player/items/all_class/halloween_bag_soldier"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -9195,7 +9198,7 @@
 			"min_ilevel"	"10"
 			"max_ilevel"	"10"
 			"set_sequence_to_class"	"1"
-			//"model_player"	"models/player/items/all_class/halloween_bag_demo.mdl"
+			"model_player"	"models/player/items/all_class/halloween_bag_demo.mdl"
 			"image_inventory"	"backpack/player/items/all_class/halloween_bag_demo"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -9242,7 +9245,7 @@
 			"min_ilevel"	"10"
 			"max_ilevel"	"10"
 			"set_sequence_to_class"	"1"
-			//"model_player"	"models/player/items/all_class/halloween_bag_medic.mdl"
+			"model_player"	"models/player/items/all_class/halloween_bag_medic.mdl"
 			"image_inventory"	"backpack/player/items/all_class/halloween_bag_medic"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -9289,7 +9292,7 @@
 			"min_ilevel"	"10"
 			"max_ilevel"	"10"
 			"set_sequence_to_class"	"1"
-			//"model_player"	"models/player/items/all_class/halloween_bag_heavy.mdl"
+			"model_player"	"models/player/items/all_class/halloween_bag_heavy.mdl"
 			"image_inventory"	"backpack/player/items/all_class/halloween_bag_heavy"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -9336,7 +9339,7 @@
 			"min_ilevel"	"10"
 			"max_ilevel"	"10"
 			"set_sequence_to_class"	"1"
-			//"model_player"	"models/player/items/all_class/halloween_bag_spy.mdl"
+			"model_player"	"models/player/items/all_class/halloween_bag_spy.mdl"
 			"image_inventory"	"backpack/player/items/all_class/halloween_bag_spy"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -9383,7 +9386,7 @@
 			"min_ilevel"	"10"
 			"max_ilevel"	"10"
 			"set_sequence_to_class"	"1"
-			//"model_player"	"models/player/items/all_class/halloween_bag_engineer.mdl"
+			"model_player"	"models/player/items/all_class/halloween_bag_engineer.mdl"
 			"image_inventory"	"backpack/player/items/all_class/halloween_bag_engineer"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -9430,7 +9433,7 @@
 			"min_ilevel"	"10"
 			"max_ilevel"	"10"
 			"set_sequence_to_class"	"1"
-			//"model_player"	"models/player/items/all_class/halloween_bag_pyro.mdl"
+			"model_player"	"models/player/items/all_class/halloween_bag_pyro.mdl"
 			"image_inventory"	"backpack/player/items/all_class/halloween_bag_pyro"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -9477,7 +9480,7 @@
 			"min_ilevel"	"10"
 			"max_ilevel"	"10"
 			"set_sequence_to_class"	"1"
-			//"model_player"	"models/player/items/all_class/halloween_bag_saxton.mdl"
+			"model_player"	"models/player/items/all_class/halloween_bag_saxton.mdl"
 			"image_inventory"	"backpack/player/items/all_class/halloween_bag_saxton"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -9526,7 +9529,7 @@
 			"image_inventory"	"backpack/player/items/all_class/pumkin_hat"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/all_class/pumkin_hat.mdl"
+			"model_player"	"models/player/items/all_class/pumkin_hat.mdl"
 			"drop_type"	"none"
 			"holiday_restriction"	"halloween"
 			"used_by_classes"
@@ -9572,7 +9575,7 @@
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"set_sequence_to_class"	"1"
-			//"model_player"	"models/player/items/all_class/all_domination.mdl"
+			"model_player"	"models/player/items/all_class/all_domination.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -9629,7 +9632,6 @@
 			"image_inventory_size_w"	"128"
 			"image_inventory_size_h"	"82"
 			"item_quality"		"unique"
-			"model_player"	"models/player/items/all_class/id_badge.mdl"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
 			"used_by_classes"
@@ -9686,7 +9688,6 @@
 			"image_inventory_size_w"	"128"
 			"image_inventory_size_h"	"82"
 			"item_quality"		"unique"
-			"model_player"	"models/player/items/all_class/id_badge.mdl"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
 			"used_by_classes"
@@ -9743,7 +9744,6 @@
 			"image_inventory_size_w"	"128"
 			"image_inventory_size_h"	"82"
 			"item_quality"		"unique"
-			"model_player"	"models/player/items/all_class/id_badge.mdl"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
 			"used_by_classes"
@@ -9800,7 +9800,6 @@
 			"image_inventory_size_w"	"128"
 			"image_inventory_size_h"	"82"
 			"item_quality"		"unique"
-			"model_player"	"models/player/items/all_class/id_badge.mdl"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
 			"used_by_classes"
@@ -9857,7 +9856,6 @@
 			"image_inventory_size_w"	"128"
 			"image_inventory_size_h"	"82"
 			"item_quality"		"unique"
-			"model_player"	"models/player/items/all_class/id_badge.mdl"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
 			"used_by_classes"
@@ -9914,7 +9912,6 @@
 			"image_inventory_size_w"	"128"
 			"image_inventory_size_h"	"82"
 			"item_quality"		"unique"
-			"model_player"	"models/player/items/all_class/id_badge.mdl"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
 			"used_by_classes"
@@ -9973,7 +9970,7 @@
 			"image_inventory"	"backpack/player/items/all_class/skull"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/all_class/skull.mdl"
+			"model_player"	"models/player/items/all_class/skull.mdl"
 			"drop_type"	"drop"
 			"set_sequence_to_class" "1"
 			"used_by_classes"
@@ -10026,7 +10023,6 @@
 			"image_inventory_size_w"	"128"
 			"image_inventory_size_h"	"82"
 			"item_quality"		"unique"
-			"model_player"	"models/player/items/all_class/id_badge.mdl"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
 			"used_by_classes"
@@ -10085,7 +10081,7 @@
 			"image_inventory"	"backpack/player/items/all_class/voodoojuju_hat"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/all_class/voodoojuju_hat.mdl"
+			"model_player"	"models/player/items/all_class/voodoojuju_hat.mdl"
 			"drop_type"	"drop"
 			"set_sequence_to_class" "1"
 			"used_by_classes"
@@ -10139,7 +10135,7 @@
 			"image_inventory"	"backpack/player/items/heavy/cadavers_cranium"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/heavy/cadavers_cranium.mdl"
+			"model_player"	"models/player/items/heavy/cadavers_cranium.mdl"
 			"drop_type"	"none"
 			"used_by_classes"
 			{
@@ -10172,7 +10168,7 @@
 			"image_inventory"	"backpack/player/items/all_class/headsplitter"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/all_class/headsplitter.mdl"
+			"model_player"	"models/player/items/all_class/headsplitter.mdl"
 			"drop_type"	"none"
 			"set_sequence_to_class" "1"
 			"used_by_classes"
@@ -10218,7 +10214,7 @@
 			"image_inventory"	"backpack/player/items/heavy/ttg_visor"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/heavy/ttg_visor.mdl"
+			"model_player"	"models/player/items/heavy/ttg_visor.mdl"
 			"drop_type"	"none"
 			"used_by_classes"
 			{
@@ -10298,7 +10294,7 @@
 			"item_quality"		"unique"
 			"min_ilevel"	"20"
 			"max_ilevel"	"20"
-			//"model_player"	"models/player/items/demo/ttg_glasses.mdl"
+			"model_player"	"models/player/items/demo/ttg_glasses.mdl"
 			"drop_type"	"none"
 			"used_by_classes"
 			{
@@ -10327,7 +10323,7 @@
 			"item_quality"		"unique"
 			"min_ilevel"	"20"
 			"max_ilevel"	"20"
-			//"model_player"	"models/player/items/all_class/ttg_badge.mdl"
+			"model_player"	"models/player/items/all_class/ttg_badge.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -10440,7 +10436,7 @@
 			"item_quality"		"unique"
 			"min_ilevel"	"20"
 			"max_ilevel"	"20"
-			//"model_player"	"models/player/items/all_class/p2_pin.mdl"
+			"model_player"	"models/player/items/all_class/p2_pin.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -10759,7 +10755,7 @@
 			"image_inventory"	"backpack/player/items/heavy/heavy_big_chief"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/heavy/heavy_big_chief.mdl"
+			"model_player"	"models/player/items/heavy/heavy_big_chief.mdl"
 			"drop_type"	"none"
 			"propername"	"1"
 			"used_by_classes"
@@ -10972,7 +10968,7 @@
 			"image_inventory"	"backpack/player/items/heavy/heavy_magnificent_mongolian"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/heavy/heavy_magnificent_mongolian.mdl"
+			"model_player"	"models/player/items/heavy/heavy_magnificent_mongolian.mdl"
 			"drop_type"	"drop"
 			"propername"	"0"
 			"used_by_classes"
@@ -11032,7 +11028,7 @@
 			"image_inventory"	"backpack/player/items/medic/blighted_beak"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/medic/medic_blighted_beak.mdl"
+			"model_player"	"models/player/items/medic/medic_blighted_beak.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -11141,7 +11137,7 @@
 			"image_inventory"	"backpack/player/items/pyro/prancers_pride"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/pyro/Prancers_Pride.mdl"
+			"model_player"	"models/player/items/pyro/Prancers_Pride.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -11483,6 +11479,7 @@
 			{
 				"nameable"		"1"
 				"can_modify_socket"		"1"
+				"can_gift_wrap" 	"1"
 			}
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Wrench"
@@ -11630,7 +11627,7 @@
 			"image_inventory"	"backpack/player/items/all_class/treasure_hat_01"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/all_class/treasure_hat_01.mdl"
+			"model_player"	"models/player/items/all_class/treasure_hat_01.mdl"
 			"drop_type"	"drop"
 			"set_sequence_to_class"	"1"
 			"used_by_classes"
@@ -11681,7 +11678,7 @@
 			"image_inventory"	"backpack/player/items/all_class/treasure_hat_02"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/all_class/treasure_hat_02.mdl"
+			"model_player"	"models/player/items/all_class/treasure_hat_02.mdl"
 			"drop_type"	"drop"
 			"set_sequence_to_class"	"1"
 			"used_by_classes"
@@ -11738,7 +11735,7 @@
 			"image_inventory"	"backpack/player/items/all_class/treasure_hat_oct"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/all_class/treasure_hat_oct.mdl"
+			"model_player"	"models/player/items/all_class/treasure_hat_oct.mdl"
 			"drop_type"	"drop"
 			"set_sequence_to_class"	"1"
 			"used_by_classes"
@@ -11876,7 +11873,7 @@
 			"image_inventory"	"backpack/player/items/engineer/engineer_colored_lights"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/engineer/engineer_colored_lights.mdl"
+			"model_player"	"models/player/items/engineer/engineer_colored_lights.mdl"
 			"drop_type"	"none"
 			"used_by_classes"
 			{
@@ -11904,7 +11901,7 @@
 			"image_inventory"	"backpack/player/items/soldier/soldier_holiday_antlers"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/soldier/soldier_holiday_antlers.mdl"
+			"model_player"	"models/player/items/soldier/soldier_holiday_antlers.mdl"
 			"drop_type"	"none"
 			"used_by_classes"
 			{
@@ -11932,7 +11929,7 @@
 			"image_inventory"	"backpack/player/items/soldier/soldier_spartan"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/soldier/soldier_spartan.mdl"
+			"model_player"	"models/player/items/soldier/soldier_spartan.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -11963,7 +11960,7 @@
 			"image_inventory"	"backpack/player/items/all_class/oh_xmas_tree"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/all_class/oh_xmas_tree.mdl"
+			"model_player"	"models/player/items/all_class/oh_xmas_tree.mdl"
 			"drop_type"	"drop"
 			"set_sequence_to_class"	"1"
 			"used_by_classes"
@@ -12041,18 +12038,18 @@
 			"image_inventory"	"backpack/player/items/all_class/mnc_hat"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player_per_class"
-			//{
-			//	"scout"		"models/player/items/scout/scout_mnc.mdl"
-			//	"sniper"	"models/player/items/sniper/sniper_mnc.mdl"
-			//	"soldier"	"models/player/items/soldier/soldier_mnc.mdl"
-			//	"demoman"	"models/player/items/demo/demo_mnc.mdl"
-			//	"medic"		"models/player/items/medic/medic_mnc.mdl"
-			//	"heavy"		"models/player/items/heavy/heavy_mnc.mdl"
-			//	"spy"		"models/player/items/spy/spy_mnc.mdl"
-			//	"engineer"	"models/player/items/engineer/engineer_mnc.mdl"
-			//	"pyro"		"models/player/items/pyro/pyro_mnc.mdl"
-			//}
+			"model_player_per_class"
+			{
+				"scout"		"models/player/items/scout/scout_mnc.mdl"
+				"sniper"	"models/player/items/sniper/sniper_mnc.mdl"
+				"soldier"	"models/player/items/soldier/soldier_mnc.mdl"
+				"demoman"	"models/player/items/demo/demo_mnc.mdl"
+				"medic"		"models/player/items/medic/medic_mnc.mdl"
+				"heavy"		"models/player/items/heavy/heavy_mnc.mdl"
+				"spy"		"models/player/items/spy/spy_mnc.mdl"
+				"engineer"	"models/player/items/engineer/engineer_mnc.mdl"
+				"pyro"		"models/player/items/pyro/pyro_mnc.mdl"
+			}
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -12096,7 +12093,7 @@
 			"image_inventory"	"backpack/player/items/scout/mnc_mascot_hat"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/scout/mnc_mascot_hat.mdl"
+			"model_player"	"models/player/items/scout/mnc_mascot_hat.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -12132,7 +12129,7 @@
 			"image_inventory"	"backpack/player/items/scout/mnc_mascot_outfit"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/scout/mnc_mascot_outfit.mdl"
+			"model_player"	"models/player/items/scout/mnc_mascot_outfit.mdl"
 			"drop_type"	"none"
 			"used_by_classes"
 			{
@@ -12140,11 +12137,117 @@
 			}
 			"visuals"
 			{
-				"hide_player_bodygroup_name"	"hat"
-				"hide_player_bodygroup_name"	"headphones"
+				"hide_player_bodygroup_name"	"shoes_socks"
 			}
 			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
 			"drop_sound" 		"ui/item_hat_pickup.wav"
+		}
+		"348"
+		{
+			"name"	"Sharpened Volcano Fragment"
+			"item_class"	"tf_weapon_fireaxe"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_modify_socket"	"1"
+				"can_gift_wrap" 	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_RiftFireAxe"
+			"item_name"	"#TF_Unique_RiftFireAxe"
+			"item_description"	"#TF_RiftFireAxe_Desc"
+			"item_slot"	"melee"
+			"item_logname"	"lava_axe"
+			"item_iconname"	"lava_axe"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/weapons/c_models/c_rift_fire_axe/c_rift_fire_axe"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_rift_fire_axe/c_rift_fire_axe.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"propername"	"0"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+			"attributes"
+			{
+				"Set DamageType Ignite"
+				{
+					"attribute_class"	"set_dmgtype_ignite"
+					"value" "1"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0.8"
+				}
+			}
+			"allowed_attributes"
+			{
+				"all_items"	"1"
+				"dmg_reductions" "1"
+				"player_health" "1"
+				"attrib_healthregen" "1"
+				"player_movement" "1"
+				"attrib_dmgdone"	"1"
+				"attrib_critboosts"	"1"
+				"attrib_onhit_slow" "1"
+				"attrib_vs_burning" "1"
+				"attrib_firerate" "1"
+			}
+		}
+		"349"
+		{
+			"name"	"Sun-on-a-Stick"
+			"item_class"	"tf_weapon_bat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_modify_socket"	"1"
+				"can_gift_wrap" 	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_RiftFireMace"
+			"item_name"	"#TF_Unique_RiftFireMace"
+			"item_description"	"#TF_RiftFireMace_Desc"
+			"item_slot"	"melee"
+			"item_logname"	"lava_bat"
+			"item_iconname"	"lava_bat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/weapons/c_models/c_rift_fire_mace/c_rift_fire_mace"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_rift_fire_mace/c_rift_fire_mace.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"scout"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+			"attributes"
+			{
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.35"
+				}
+				"dmg penalty vs nonburning"
+				{
+					"attribute_class"	"mult_dmg_vs_nonburning"
+					"value"	"0.55"
+				}
+			}
 		}
 		
 		// world traveler hat and tokens
@@ -12168,7 +12271,7 @@
 			"min_ilevel"	"20"
 			"max_ilevel"	"20"
 			"set_sequence_to_class"	"1"
-			//"model_player"	"models/player/items/all_class/world_traveller.mdl"
+			"model_player"	"models/player/items/all_class/world_traveller.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -14664,6 +14767,39 @@
 				}
 			}
 		}
+		
+		"5500"
+		{
+			"name"	"RIFT Spider Hat Code"
+			"item_class"	"tool"
+			"tool"
+			{
+				"type"	"claimcode"
+				"usage"
+				{
+					"claim_type"	"#TF_RIFT_SpiderHat_ClaimType"
+				}
+			}
+			"capabilities"
+			{
+				"usable_gc"				"1"
+				"usable_out_of_game"	"1"
+			}
+			"armory_desc" "claimcode"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_ClaimCode"
+			"item_name"	"#TF_RIFT_SpiderHat_ClaimCode"
+			"item_description"	"#TF_Tool_ClaimCode_Desc"
+			"image_inventory"	"backpack/crafting/ticket"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"item_quality"	"unique"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"mouse_pressed_sound"	"ui/item_paper_pickup.wav"
+			"drop_sound"		"ui/item_paper_pickup.wav"
+		}
+
 	}
 	"attributes"
 	{
@@ -17536,6 +17672,20 @@
 			"effect_type"	"negative"
 			"stored_as_integer"	"0"
 		}
+		"208"
+		{
+			"name"	"Set DamageType Ignite"
+			"attribute_class"	"set_dmgtype_ignite"
+			"attribute_name"	"Set DamageType Ignite"
+			"min_value"	"0"
+			"max_value"	"1"
+			"group"	"only_on_unique"
+			"description_string"	"#Attrib_SetDamageType_Ignite"
+			"description_format"	"value_is_additive"
+			"hidden"	"0"
+			"effect_type"	"positive"
+			"stored_as_integer"	"0"
+		}
 	}
 	"item_sets"
 	{
@@ -17735,6 +17885,7 @@
 		"TF_HALLOWEEN_BOSS_KILL"	"278"
 		"TF_HALLOWEEN_BOSS_KILL_MELEE"	"267"
 		"TF_HALLOWEEN_COLLECT_PUMPKINS"	"115"
+		"TF_GENERAL_KILL_ENEMIES_AFTER_TELEPORTING" "5500"
 		"ASW_PARA_HAT"
 		{ 
 			"SourceAppID"	"630"
@@ -17789,87 +17940,87 @@
 			"system"			"halopoint"
 			"attachment"			"halopoint1"
 		}
-		//"6"
-		//{
-		//	"system"			"superrare_confetti_green"	
-		//}
-		//"7"
-		//{
-		//	"system"			"superrare_confetti_purple"
-		//}
-		//"8"
-		//{
-		//	"system"			"superrare_ghosts"
-		//	"attach_to_rootbone"	"1"
-		//	"attachment"		"muzzle"
-		//}
-		//"9"
-		//{
-		//	"system"			"superrare_greenenergy"
-		//	"attach_to_rootbone"	"1"
-		//}
-		//"10"
-		//{
-		//	"system"			"superrare_purpleenergy"
-		//	"attach_to_rootbone"	"1"
-		//}
-		//"11"
-		//{
-		//	"system"			"superrare_circling_tf"
-		//	"attach_to_rootbone"	"1"
-		//	"attachment"		"muzzle"
-		//}
-		//"12"
-		//{
-		//	"system"			"superrare_flies"
-		//	"attach_to_rootbone"	"1"
-		//}
+		"6"
+		{
+			"system"			"superrare_confetti_green"	
+		}
+		"7"
+		{
+			"system"			"superrare_confetti_purple"
+		}
+		"8"
+		{
+			"system"			"superrare_ghosts"
+			"attach_to_rootbone"	"1"
+			"attachment"		"muzzle"
+		}
+		"9"
+		{
+			"system"			"superrare_greenenergy"
+			"attach_to_rootbone"	"1"
+		}
+		"10"
+		{
+			"system"			"superrare_purpleenergy"
+			"attach_to_rootbone"	"1"
+		}
+		"11"
+		{
+			"system"			"superrare_circling_tf"
+			"attach_to_rootbone"	"1"
+			"attachment"		"muzzle"
+		}
+		"12"
+		{
+			"system"			"superrare_flies"
+			"attach_to_rootbone"	"1"
+		}
 
-		//"13"
-		//{
-		//	"system"			"superrare_burning1"
-		//	"attach_to_rootbone"	"1"
-		//}
-		//"14"
-		//{
-		//	"system"			"superrare_burning2"
-		//	"attach_to_rootbone"	"1"
-		//}
+		"13"
+		{
+			"system"			"superrare_burning1"
+			"attach_to_rootbone"	"1"
+		}
+		"14"
+		{
+			"system"			"superrare_burning2"
+			"attach_to_rootbone"	"1"
+		}
 
-		//"15"
-		//{
-		//	"system"			"superrare_plasma1"
-		//	"attach_to_rootbone"	"1"
-		//	"attachment"		"muzzle"
-		//}
-		//"16"
-		//{
-		//	"system"			"superrare_plasma2"
-		//	"attach_to_rootbone"	"1"
-		//	"attachment"		"muzzle"
-		//}
-		//"17"
-		//{
-		//	"system"			"superrare_beams1"
-		//	"attach_to_rootbone"	"1"
-		//}
-		//"18"
-		//{
-		//	"system"			"superrare_circling_peacesign"
-		//	"attach_to_rootbone"	"1"
-		//	"attachment"		"muzzle"
-		//}
-		//"19"
-		//{
-		//	"system"			"superrare_circling_heart"
-		//	"attach_to_rootbone"	"1"
-		//	"attachment"		"muzzle"
-		//}
-		//"20"
-		//{
-		//	"system"			"stamp_spin"
-		//	"attach_to_rootbone"	"1"
-		//}
+		"15"
+		{
+			"system"			"superrare_plasma1"
+			"attach_to_rootbone"	"1"
+			"attachment"		"muzzle"
+		}
+		"16"
+		{
+			"system"			"superrare_plasma2"
+			"attach_to_rootbone"	"1"
+			"attachment"		"muzzle"
+		}
+		"17"
+		{
+			"system"			"superrare_beams1"
+			"attach_to_rootbone"	"1"
+		}
+		"18"
+		{
+			"system"			"superrare_circling_peacesign"
+			"attach_to_rootbone"	"1"
+			"attachment"		"muzzle"
+		}
+		"19"
+		{
+			"system"			"superrare_circling_heart"
+			"attach_to_rootbone"	"1"
+			"attachment"		"muzzle"
+		}
+		"20"
+		{
+			"system"			"stamp_spin"
+			"attach_to_rootbone"	"1"
+		}
 	}
 	"upgradeable_base_items"
 	{
