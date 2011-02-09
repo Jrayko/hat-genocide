@@ -4292,7 +4292,7 @@
 			"image_inventory"	"backpack/player/items/demo/hallmark"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			//"model_player"	"models/player/items/demo/hallmark.mdl"
+			"model_player"	"models/player/items/demo/hallmark.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
@@ -12187,6 +12187,11 @@
 					"attribute_class"	"mult_dmg"
 					"value"	"0.8"
 				}
+				"cannot trade"
+				{
+					"attribute_class"	"cannot_trade"
+					"value"				"1"
+				}
 			}
 			"allowed_attributes"
 			{
@@ -12237,15 +12242,20 @@
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 			"attributes"
 			{
-				"damage bonus"
+				"minicrit vs burning player"
+				{
+					"attribute_class"	"or_minicrit_vs_playercond_burning"
+					"value" "1"
+				}
+				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"1.35"
+					"value"	"0.85"
 				}
-				"dmg penalty vs nonburning"
+				"cannot trade"
 				{
-					"attribute_class"	"mult_dmg_vs_nonburning"
-					"value"	"0.55"
+					"attribute_class"	"cannot_trade"
+					"value"				"1"
 				}
 			}
 		}
@@ -14789,7 +14799,7 @@
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_ClaimCode"
 			"item_name"	"#TF_RIFT_SpiderHat_ClaimCode"
-			"item_description"	"#TF_Tool_ClaimCode_Desc"
+			"item_description"	"#TF_RIFT_SpiderHat_ClaimCode_Desc"
 			"image_inventory"	"backpack/crafting/ticket"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -17686,6 +17696,20 @@
 			"effect_type"	"positive"
 			"stored_as_integer"	"0"
 		}
+		"209"
+		{
+			"name"	"minicrit vs burning player"
+			"attribute_class"	"or_minicrit_vs_playercond_burning"
+			"attribute_name"	"Minicrit vs Burning Player"
+			"min_value"	"0"
+			"max_value"	"1"
+			"group"	"only_on_unique"
+			"description_string"	"#Attrib_Minicrit_Vs_Burning_Player"
+			"description_format"	"value_is_additive"
+			"hidden"	"0"
+			"effect_type"	"positive"
+			"stored_as_integer"	"0"
+		}		
 	}
 	"item_sets"
 	{
